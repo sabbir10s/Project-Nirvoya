@@ -42,15 +42,15 @@ const Navbar = () => {
             </div>
 
             <div>
-                <ul className="uppercase flex items-center justify-between text-[14px] mt-[34px]">
-                    <li>Women's Fashion</li>
-                    <li>Men's Fashion</li>
-                    <li>Kid's Fashion</li>
-                    <li className="hidden lg:block">Home & Lifestyle</li>
-                    <li className="hidden lg:block">Arts & Crafts</li>
-                    <li className="hidden lg:block">Computer & Electronics</li>
-                    <li className="hidden lg:block">Food & Grocery</li>
-                    <li className="block lg:hidden text-lg text-[#999999]"><MdNavigateNext /></li>
+                <ul className="uppercase flex items-center justify-between text-[14px] mt-[20px]">
+                    <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Women's Fashion</li>
+                    <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Men's Fashion</li>
+                    <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Kid's Fashion</li>
+                    <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Home & Lifestyle</li>
+                    <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Arts & Crafts</li>
+                    <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Computer & Electronics</li>
+                    <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Food & Grocery</li>
+                    <li className="block lg:hidden cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary text-lg text-[#999999]"><MdNavigateNext /></li>
                 </ul>
             </div>
         </nav>
