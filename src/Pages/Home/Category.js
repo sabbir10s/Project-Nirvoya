@@ -18,110 +18,110 @@ import { MdNavigateNext } from 'react-icons/md';
 const Category = () => {
     return (
         <div className='mt-[50px]'>
-            <h2 className='text-[26px] mb-[32px]'>Category</h2>
-            <div className='grid grid-cols-5 gap-[13px]'>
+            <h2 className='text-[26px] mb-[32px] font-bold'>Category</h2>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[13px]'>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={health} alt="" />
-                        <p className='text-[#394146]'>Health & Household</p>
+                        <img className='w-[25px] md:w-[30px]' src={health} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Health & Household</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={kids} alt="" />
-                        <p className='text-[#394146]'>Kids Fashion</p>
+                        <img className='w-[25px] md:w-[30px]' src={kids} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Kids Fashion</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={toys} alt="" />
-                        <p className='text-[#394146]'>Toys</p>
+                        <img className='w-[25px] md:w-[30px]' src={toys} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Toys</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={groceries} alt="" />
-                        <p className='text-[#394146]'>Groceries</p>
+                        <img className='w-[25px] md:w-[30px]' src={groceries} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Groceries</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={home} alt="" />
-                        <p className='text-[#394146]'>Home & Lifestyle</p>
+                        <img className='w-[25px] md:w-[30px]' src={home} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Home & Lifestyle</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={men} alt="" />
-                        <p className='text-[#394146]'>Men Fashion</p>
+                        <img className='w-[25px] md:w-[30px]' src={men} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Men Fashion</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={women} alt="" />
-                        <p className='text-[#394146]'>Women’s Fashion</p>
+                        <img className='w-[25px] md:w-[30px]' src={women} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Women’s Fashion</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={stationary} alt="" />
-                        <p className='text-[#394146]'>Stationary & Books</p>
+                        <img className='w-[25px] md:w-[30px]' src={stationary} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Stationary & Books</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={leather} alt="" />
-                        <p className='text-[#394146]'>Leather Goods</p>
+                        <img className='w-[25px] md:w-[30px]' src={leather} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Leather Goods</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={jewelleries} alt="" />
-                        <p className='text-[#394146]'>Jewelleries</p>
+                        <img className='w-[25px] md:w-[30px]' src={jewelleries} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Jewelleries</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={watches} alt="" />
-                        <p className='text-[#394146]'>Watches</p>
+                        <img className='w-[25px] md:w-[30px]' src={watches} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Watches</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={men_fashion} alt="" />
-                        <p className='text-[#394146]'>Men Fashion</p>
+                        <img className='w-[25px] md:w-[30px]' src={men_fashion} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Men Fashion</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={tools} alt="" />
-                        <p className='text-[#394146]'>Tools</p>
+                        <img className='w-[25px] md:w-[30px]' src={tools} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Tools</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={pet} alt="" />
-                        <p className='text-[#394146]'>Pet Supplies</p>
+                        <img className='w-[25px] md:w-[30px]' src={pet} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Pet Supplies</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>
                 <div className='flex items-center justify-between bg-[#FFFFFF] p-[16px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
                     <div className='flex items-center gap-[10px]'>
-                        <img className='w-[30px]' src={seasonal} alt="" />
-                        <p className='text-[#394146]'>Seasonal</p>
+                        <img className='w-[25px] md:w-[30px]' src={seasonal} alt="" />
+                        <p className='text-[#394146] text-[14px] md:text-[16px]'>Seasonal</p>
                     </div>
                     <MdNavigateNext className='text-[25px] text-[#999999]' />
                 </div>

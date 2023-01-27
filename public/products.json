@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Headrest Executive Mesh Office Chair set",
+      "price": 1020,
+      "image": "https://i.ibb.co/6J7vvPp/1.png",
+      "like": false,
+      "ratings": 4
+    },
+    {
+      "title": "Women fashion dress set",
+      "price": 1400,
+      "image": "https://i.ibb.co/2sHZj49/2.png",
+      "like": true,
+      "ratings": 5
+    },
+    {
+      "title": "Headrest Executive Mesh Office Chair set",
+      "price": 1500,
+      "image": "https://i.ibb.co/dgd5Yvb/3.png",
+      "like": false,
+      "ratings": 3
+    },
+    {
+      "title": "Women black dress and red hat collections",
+      "price": 1200,
+      "image": "https://i.ibb.co/LgdVv7v/4.png",
+      "like": false,
+      "ratings": 4
+    }
+  ]
