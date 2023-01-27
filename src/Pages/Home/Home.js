@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Category from './Category';
+import FeaturedProduct from './FeaturedProduct';
 import FlashDeals from './FlashDeals';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner />
             <Category />
             <FlashDeals />
+            <FeaturedProduct />
         </div>
     );
 };
