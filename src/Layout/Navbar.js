@@ -13,10 +13,10 @@ const Navbar = () => {
         <nav className="px-[20px] lg:px-[32px] border-b border-[#EFEEEE] pb-[10px]">
             <div className="grid grid-cols-6 md:grid-cols-12 items-center">
                 <div className=" col-span-3 order-1 block lg:hidden w-full">
-                    <img className="w-[100px]" src={logo} alt="Project-Nirvoya-Logo" />
+                    <Link to='/'><img className="w-[100px]" src={logo} alt="Project-Nirvoya-Logo" /></Link>
                 </div>
                 <div className=" order-3 lg:order-1 col-span-9 w-full flex items-center gap-10">
-                    <img className="hidden lg:block  w-[141px]" src={logo} alt="Project-Nirvoya-Logo" />
+                    <Link to='/'><img className="hidden lg:block  w-[141px]" src={logo} alt="Project-Nirvoya-Logo" /></Link>
                     <div className="flex w-full">
                         <input className=" w-full border border-[#F1F1F1] rounded-l-[5px] bg-[#F6F6F6] pl-[13px] lg:pl-[13px] py-[8px] lg:py-[13px] outline-none focus:bg-white" type="search" name="search" id="search" placeholder="I'm looking for..." />
                         <button className="bg-secondary px-[20px] py-[14px] rounded-r-[5px] text-2xl text-white"><BiSearch /></button>

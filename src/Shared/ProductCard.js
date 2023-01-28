@@ -3,11 +3,12 @@ import ReactStars from 'react-stars';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import { TbCurrencyTaka } from 'react-icons/tb';
 import basket from '.././Assets/Icons/blue_basket.png'
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
     const { category, title, image, like, price, rating } = product
     return (
-        <div className='bg-white rounded-[10px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
+        <Link to='/productDetails' className='bg-white rounded-[10px] shadow-[0_2px_8px_0_rgba(0,0,0,0.08)]'>
             <div className='flex items-center justify-center bg-[#F2F2F2] m-[9px] rounded-[10px] relative'>
                 <img className='w-[300px] rounded-[10px]' src={image} alt="" />
                 {
@@ -35,7 +36,7 @@ const ProductCard = ({ product }) => {
                 <div className='flex items-center gap-0 text-primary text-[22px]'><TbCurrencyTaka /><span>{price}</span></div>
                 <img className='w-[20px] cursor-pointer' src={basket} alt="" />
             </div>
-        </div>
+        </Link>
     );
 };
 
