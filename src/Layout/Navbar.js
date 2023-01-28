@@ -10,7 +10,7 @@ import { MdNavigateNext } from 'react-icons/md';
 const Navbar = () => {
 
     return (
-        <nav className="px-[2px] lg:px-[32px] border-b border-[#EFEEEE] pb-[10px]">
+        <nav className="px-[20px] lg:px-[32px] border-b border-[#EFEEEE] pb-[10px]">
             <div className="grid grid-cols-6 md:grid-cols-12 items-center">
                 <div className=" col-span-3 order-1 block lg:hidden w-full">
                     <img className="w-[100px]" src={logo} alt="Project-Nirvoya-Logo" />
