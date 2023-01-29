@@ -10,7 +10,7 @@ const BottomSection = () => {
             .then(data => setReviews(data))
     }, [])
     if (!reviews.length) {
-        return <p>Loading...</p>
+        return <p className='h-screen flex justify-center items-center text-4xl font-bold text-gray-400'>Loading...</p>
     }
     console.log(reviews.length);
     return (
@@ -102,9 +102,9 @@ const BottomSection = () => {
                     <textarea className='border-[1px] border-[#A7A7A7] rounded-[5px] w-1/2 h-[119px] text-[20px]' name="review" id="review" cols="30" rows="4"></textarea>
                 </div>
                 <div className='flex items-center gap-[16px] my-[42px]'>
-                    <p>Rating</p>
+                    <p className='text-[18px]'>Rating</p>
                     <ReactStars
-                        size={20}
+                        size={30}
                         value={4}
                         edit={false}
                     ></ReactStars>

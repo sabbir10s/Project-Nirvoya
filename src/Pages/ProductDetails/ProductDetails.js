@@ -6,7 +6,7 @@ import MiddleSection from './MiddleSection';
 
 const ProductDetails = () => {
     return (
-        <div className=''>
+        <div>
             <FirstSection />
             <MiddleSection />
             <BottomSection />
