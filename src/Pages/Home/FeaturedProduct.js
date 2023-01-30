@@ -1,9 +1,9 @@
 import React from 'react';
-import getProducts from '../../Shared/getProducts'
 import ProductCard from '../../Shared/ProductCard';
 import { FiChevronDown } from 'react-icons/fi';
+import useProducts from '../../Shared/useProducts';
 const FeaturedProduct = () => {
-    const [products] = getProducts([])
+    const [products] = useProducts([])
     return (
         <div className='mt-[50px]'>
             <h2 className='text-[26px] mb-[32px] font-bold'>Featured Products</h2>

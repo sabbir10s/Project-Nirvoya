@@ -3,11 +3,11 @@ import { RiArrowDownSLine } from 'react-icons/ri';
 import { ImStarFull } from 'react-icons/im';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import './productCategory.css'
-import getProducts from '../../Shared/getProducts'
 import ProductCard from '../../Shared/ProductCard';
+import useProducts from '../../Shared/useProducts';
 
 const ProductCategory = () => {
-    const [products] = getProducts([])
+    const [products] = useProducts([])
     if (products.length === 0) {
         return <p className='h-screen flex justify-center items-center text-4xl font-bold text-gray-400'>Loading...</p>
     }
