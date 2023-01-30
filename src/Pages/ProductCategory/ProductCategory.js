@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import { ImStarFull } from 'react-icons/im';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import './productCategory.css'
 import getProducts from '../../Shared/getProducts'
 import ProductCard from '../../Shared/ProductCard';
@@ -93,10 +94,23 @@ const ProductCategory = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px] mt-[22px]'>
-                    {
-                        products.filter((product) => product.category !== "flash deals").map(product => <ProductCard key={product._id} product={product} />)
-                    }
+                <div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px] mt-[22px]'>
+                        {
+                            products.filter((product) => product.category !== "flash deals").map(product => <ProductCard key={product._id} product={product} />)
+                        }
+                    </div>
+                </div>
+                <div className='flex justify-end'>
+                    <div className='flex items-center gap-[18px] mt-[40px] mb-[50px]'>
+                        <button className='text-[18px] text-secondary font-semibold border-[1px] border-[#E9E9E9] rounded-[5px] px-[26px] py-[12px] flex items-center gap-[18px]'><IoIosArrowBack className='text-blue-500' /> <span>Previous</span> </button>
+                        <div className='flex items-center'>
+                            <button className='bg-secondary text-white px-[24px] py-[12px] text-[18px] font-semibold border-[1px] border-secondary rounded-l-[5px]'>1</button>
+                            <button className='bg-white text-primary px-[24px] py-[12px] text-[18px] font-semibold border-[1px] border-[#E9E9E9]'>2</button>
+                            <button className='bg-white text-primary px-[24px] py-[12px] text-[18px] font-semibold border-[1px] border-[#E9E9E9] rounded-r-[5px]'>3</button>
+                        </div>
+                        <button className='text-[18px] text-secondary font-semibold border-[1px] border-[#E9E9E9] rounded-[5px] px-[26px] py-[12px] flex items-center gap-[18px]'><IoIosArrowForward className='text-blue-500' /> <span>Next</span> </button>
+                    </div>
                 </div>
             </div>
 
