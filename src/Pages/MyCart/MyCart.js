@@ -1,6 +1,7 @@
 import React from 'react';
 import { MdDelete } from 'react-icons/md';
 import { TbCurrencyTaka } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 import useProducts from '../../Shared/useProducts';
 import './myCart.css'
 const MyCart = () => {
@@ -75,12 +76,12 @@ const MyCart = () => {
                 </div>
                 <div className='h-[1.73px] w-full bg-[#F3F3F3] my-[30px]'></div>
 
-                <div className='flex items-center justify-between mt-[7px]'>
+                <div className='flex items-center justify-between mt-[7px] mb-[31px]'>
                     <p className='text-[18px] text-[#8D8D8D]'>Order Total</p>
                     <p className='text-[28px] text-secondary font-bold flex items-center '><TbCurrencyTaka />1,952.66</p>
                 </div>
 
-                <button className='uppercase text-white text-[20px] font-bold bg-secondary w-full py-[13px] rounded-[5px] mt-[31px]'>proceed to checkout</button>
+                <Link to='/checkOut' ><button className='uppercase text-white text-[20px] font-bold bg-secondary w-full py-[13px] rounded-[5px] '>proceed to checkout</button></Link>
             </div>
 
         </div >
