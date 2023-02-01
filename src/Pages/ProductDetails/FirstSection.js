@@ -21,41 +21,41 @@ const FirstSection = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-[109px] mt-[25px]'>
                 <div className='flex flex-col lg:flex-row gap-[25px]'>
                     <div>
-                        <div className='w-[550px] h-[550px] bg-[#F2F2F2] flex items-end justify-center'>
+                        <div className='w-full lg:w-[550px] h-[550px] bg-[#F2F2F2] flex items-center lg:items-end justify-center'>
                             <img className='w-[250px]' src={previewOne} alt="" />
                         </div>
                         <div className='flex items-center gap-[14px] mt-[45px]'>
                             <p className='text-[20px] text-[#333333]'>Share</p>
-                            <img className='w-[44px]' src={linkedIn} alt="" />
-                            <img className='w-[44px]' src={twitter} alt="" />
-                            <img className='w-[44px]' src={facebook} alt="" />
-                            <img className='w-[44px]' src={whatsApp} alt="" />
-                            <img className='w-[44px]' src={shareLink} alt="" />
+                            <img className='w-[35px] lg:w-[44px]' src={linkedIn} alt="" />
+                            <img className='w-[35px] lg:w-[44px]' src={twitter} alt="" />
+                            <img className='w-[35px] lg:w-[44px]' src={facebook} alt="" />
+                            <img className='w-[35px] lg:w-[44px]' src={whatsApp} alt="" />
+                            <img className='w-[35px] lg:w-[44px]' src={shareLink} alt="" />
                         </div>
                     </div>
                     <div className='flex flex-row lg:flex-col items-center'>
-                        <RiArrowUpSLine className='text-2xl font-bold hover:text-primary cursor-pointer mb-[24px]' />
+                        <RiArrowUpSLine className='hidden lg:block text-2xl font-bold hover:text-primary cursor-pointer mb-[24px]' />
                         <div className='border-[1.5px] border-secondary cursor-pointer'>
-                            <div className='w-[85px] h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
-                                <img className='w-[40px]' src={previewOne} alt="" />
+                            <div className='w-[60px] lg:w-[85px] h-[60px] lg:h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
+                                <img className=' w-[30px] lg:w-[40px]' src={previewOne} alt="" />
                             </div>
                         </div>
                         <div className='border-[1.5px] border-transparent hover:border-secondary cursor-pointer'>
-                            <div className='w-[85px] h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
-                                <img className='w-[40px]' src={[previewTwo]} alt="" />
+                            <div className='w-[60px] lg:w-[85px] h-[60px] lg:h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
+                                <img className=' w-[30px] lg:w-[40px]' src={[previewTwo]} alt="" />
                             </div>
                         </div>
                         <div className='border-[1.5px] border-transparent hover:border-secondary cursor-pointer'>
-                            <div className='w-[85px] h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
-                                <img className='w-[40px]' src={previewThree} alt="" />
+                            <div className='w-[60px] lg:w-[85px] h-[60px] lg:h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
+                                <img className=' w-[30px] lg:w-[40px]' src={previewThree} alt="" />
                             </div>
                         </div>
                         <div className='border-[1.5px] border-transparent hover:border-secondary cursor-pointer'>
-                            <div className='w-[85px] h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
-                                <img className='w-[40px]' src={previewFour} alt="" />
+                            <div className='w-[60px] lg:w-[85px] h-[60px] lg:h-[85px] bg-[#F2F2F2] flex items-end justify-center m-[6px]'>
+                                <img className=' w-[30px] lg:w-[40px]' src={previewFour} alt="" />
                             </div>
                         </div>
-                        <RiArrowDownSLine className='text-2xl font-bold hover:text-primary cursor-pointer mt-[24px]' />
+                        <RiArrowDownSLine className='hidden lg:block text-2xl font-bold hover:text-primary cursor-pointer mt-[24px]' />
                     </div>
                 </div>
 
@@ -133,14 +133,16 @@ const FirstSection = () => {
                         </div>
                     </div>
 
-                    <div className='mt-[33px] flex  gap-[15px]'>
-                        <p>Quantity:</p>
-                        <div className='flex flex-col lg:flex-row lg:items-center gap-[35px]'>
+                    <div className='mt-[33px] flex flex-col lg:flex-row  gap-[15px]'>
+                        <div className='flex gap-[16px] items-center'>
+                            <p>Quantity:</p>
                             <div className='flex items-center '>
                                 <button className='bg-[#EFEFEF] text-[#ACACAC] w-[26px] h-[34px] flex items-center justify-center rounded-tl-[2px] rounded-bl-[2px]'>-</button>
                                 <p className='w-[26px] h-[34px] flex items-center justify-center border-y-[1.5px] border-[#EAEAEA]'>2</p>
                                 <button className='bg-[#EFEFEF] text-[#ACACAC] w-[26px] h-[34px] flex items-center justify-center rounded-tr-[2px] rounded-br-[2px] '>+</button>
                             </div>
+                        </div>
+                        <div className='flex flex-row items-center gap-[35px] mt-[12px] lg:mt-0'>
                             <button className='w-[165px] h-[45px] text-[20px] font-bold border-[1.5px] border-secondary rounded-[3px] hover:text-secondary text-white hover:bg-white bg-secondary'>Add Cart</button>
                             <button className='w-[165px] h-[45px] text-[20px] font-bold border-[1.5px] border-secondary rounded-[3px] text-secondary hover:text-white bg-white hover:bg-secondary'>Buy Now</button>
                         </div>

@@ -15,8 +15,8 @@ const BottomSection = () => {
     console.log(reviews.length);
     return (
         <div className='mx-[20px] lg:mx-[32px]'>
-            <div className='bg-[#FCFCFC] px-[48px] pb-[60px] mt-[30px] mb-[50px]'>
-                <div className='flex items-center gap-[75px]'>
+            <div className='bg-[#FCFCFC] px-[5px] lg:px-[48px] pb-[60px] mt-[30px] mb-[50px]'>
+                <div className='flex flex-col lg:flex-row items-center gap-[40px] lg:gap-[75px]'>
                     <div>
                         <h3 className='text-[20px] text-[#3D3D3F] font-semibold'>Customer reviews</h3>
                         <div className='flex items-center gap-[4px] mt-[10px]'>
@@ -29,27 +29,27 @@ const BottomSection = () => {
                         </div>
                     </div>
                     <div>
-                        <div className='flex items-center gap-[11px]'>
+                        <div className='flex items-center gap-[5px] lg:gap-[11px]'>
                             <p>5 Stars</p>
                             <progress class="progress progress-warning w-56" value="80" max="100"></progress>
                             <p>79%</p>
                         </div>
-                        <div className='flex items-center gap-[11px]'>
+                        <div className='flex items-center gap-[5px] lg:gap-[11px]'>
                             <p>4 Stars</p>
                             <progress class="progress progress-warning w-56" value="12" max="100"></progress>
                             <p>59%</p>
                         </div>
-                        <div className='flex items-center gap-[11px]'>
+                        <div className='flex items-center gap-[5px] lg:gap-[11px]'>
                             <p>3 Stars</p>
                             <progress class="progress progress-warning w-56" value="5" max="100"></progress>
                             <p>15%</p>
                         </div>
-                        <div className='flex items-center gap-[11px]'>
+                        <div className='flex items-center gap-[5px] lg:gap-[11px]'>
                             <p>2 Stars</p>
                             <progress class="progress progress-warning w-56" value="2" max="100"></progress>
                             <p>10%</p>
                         </div>
-                        <div className='flex items-center gap-[11px]'>
+                        <div className='flex items-center gap-[5px] lg:gap-[11px]'>
                             <p>1 Stars</p>
                             <progress class="progress progress-warning w-56" value="1" max="100"></progress>
                             <p>7%</p>
@@ -63,7 +63,7 @@ const BottomSection = () => {
                 <div className='border-t-[1px] border-[#F1F1F1] pt-[19px]'>
                     {
                         reviews.map(review => <div >
-                            <div className='flex gap-[16px]'>
+                            <div className='flex flex-col lg:flex-row gap-[10px] lg:gap-[16px]'>
                                 <div>
                                     <img className='w-[56px] rounded-[4px]' src={review.img} alt="" />
                                 </div>
@@ -90,16 +90,16 @@ const BottomSection = () => {
 
                 <div className='flex flex-col gap-[16px]'>
                     <label htmlFor='name' className='text-[18px] text-[#383838] '>Name*</label>
-                    <input className='border-[1px] border-[#A7A7A7] rounded-[5px] w-1/2 h-[60px] text-[20px]' type="text" name="name" id="name" />
+                    <input className='border-[1px] border-[#A7A7A7] rounded-[5px] lg:w-1/2 h-[60px] text-[20px]' type="text" name="name" id="name" />
                 </div>
                 <div className='flex flex-col gap-[16px] mt-[32px]'>
                     <label htmlFor='email' className='text-[18px] text-[#383838] '>Email*</label>
-                    <input className='border-[1px] border-[#A7A7A7] rounded-[5px] w-1/2 h-[60px] text-[20px]' type="email" name="email" id="email" />
+                    <input className='border-[1px] border-[#A7A7A7] rounded-[5px] lg:w-1/2 h-[60px] text-[20px]' type="email" name="email" id="email" />
                 </div>
                 <div className='flex flex-col gap-[16px] mt-[32px]'>
                     <label htmlFor='review' className='text-[18px] text-[#383838] '>Review*</label>
                     {/* <input  type="email" name="email" id="email" /> */}
-                    <textarea className='border-[1px] border-[#A7A7A7] rounded-[5px] w-1/2 h-[119px] text-[20px]' name="review" id="review" cols="30" rows="4"></textarea>
+                    <textarea className='border-[1px] border-[#A7A7A7] rounded-[5px] lg:w-1/2 h-[119px] text-[20px]' name="review" id="review" cols="30" rows="4"></textarea>
                 </div>
                 <div className='flex items-center gap-[16px] my-[42px]'>
                     <p className='text-[18px]'>Rating</p>
