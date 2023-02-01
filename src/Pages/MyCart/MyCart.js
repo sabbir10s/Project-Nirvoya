@@ -3,7 +3,7 @@ import { MdDelete } from 'react-icons/md';
 import { TbCurrencyTaka } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import useProducts from '../../Shared/useProducts';
-import './myCart.css'
+import '../../Shared/checkBoxStyle.css'
 const MyCart = () => {
     const [products] = useProducts([])
     return (
