@@ -6,7 +6,7 @@ import FlashDeals from './FlashDeals';
 
 const Home = () => {
     return (
-        <div className='px-[20px] lg:px-[32px] bg-[#FAFAFA]'>
+        <div className='px-[10px] lg:px-[32px] bg-[#FAFAFA]'>
             <Banner />
             <CategoryButtons />
             <FlashDeals />
