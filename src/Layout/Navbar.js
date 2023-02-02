@@ -25,13 +25,13 @@ const Navbar = () => {
                 <div className=" order-2 lg:order-2 col-span-3 w-full">
                     <div className="flex justify-end items-center gap-8 w-full">
                         <div>
-                            <Link className="text-base flex items-center gap-1" to='/login'><HiOutlineUser /> <span className="hidden lg:block">Login</span></Link>
+                            <label htmlFor="my-modal-5" className=" cursor-pointer text-base flex items-center gap-1 hover:text-secondary" to='/login'><HiOutlineUser /> <span className="hidden lg:block">Login</span></label>
                         </div>
                         <div>
-                            <Link className="text-base flex items-center gap-1" to='/wishlist'> <AiOutlineHeart /> <span className="hidden lg:block">Wishlist</span></Link>
+                            <a href="#" className="text-base flex items-center gap-1 hover:text-secondary"> <AiOutlineHeart /> <span className="hidden lg:block">Wishlist</span></a>
                         </div>
                         <div>
-                            <Link className="text-base flex items-center gap-1 relative" to='/myCart'>
+                            <Link className="text-base flex items-center gap-1 relative hover:text-secondary" to='/myCart'>
                                 <img className="w-[16px] " src={cart} alt="" />
                                 <span className="hidden lg:block">My Cart</span>
                                 <span className="bg-secondary text-white w-4 lg:w-5 h-4 lg:h-5 rounded-full flex justify-center items-center text-xs lg:text-sm absolute lg:relative top-[-8px] lg:top-0 left-[8px] lg:left-0">1</span>
@@ -44,7 +44,7 @@ const Navbar = () => {
             <div>
                 <ul className="uppercase flex items-center justify-between text-[14px] mt-[20px]">
                     <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary block group">Women's Fashion
-                        <div className="hidden group-hover:block absolute top-[119px] bg-white px-[5px] lg:px-[71px] pt-[30px] pb-[26px] w-full text-[#757575] normal-case">
+                        <div className="hidden group-hover:block absolute top-[119px] bg-white px-[5px] lg:px-[71px] pt-[30px] pb-[26px] w-full text-[#757575] normal-case z-50">
                             <div className=" grid grid-cols-3 lg:grid-cols-5 justify-between">
                                 <div>
                                     <h2 className=" text-black font-semibold">Saree</h2>
