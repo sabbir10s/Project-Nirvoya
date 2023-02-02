@@ -10,7 +10,7 @@ import { MdNavigateNext } from 'react-icons/md';
 const Navbar = () => {
 
     return (
-        <nav className="px-[20px] lg:px-[32px] border-b border-[#EFEEEE] pb-[10px]">
+        <nav className="px-[20px] lg:px-[32px] border-b border-[#EFEEEE] pb-[10px] relative">
             <div className="grid grid-cols-6 md:grid-cols-12 items-center">
                 <div className=" col-span-3 order-1 block lg:hidden w-full">
                     <Link to='/'><img className="w-[100px]" src={logo} alt="Project-Nirvoya-Logo" /></Link>
@@ -43,7 +43,91 @@ const Navbar = () => {
 
             <div>
                 <ul className="uppercase flex items-center justify-between text-[14px] mt-[20px]">
-                    <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Women's Fashion</li>
+                    <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary block group">Women's Fashion
+                        <div className="hidden group-hover:block absolute top-[119px] bg-white px-[5px] lg:px-[71px] pt-[30px] pb-[26px] w-full text-[#757575] normal-case">
+                            <div className=" grid grid-cols-3 lg:grid-cols-5 justify-between">
+                                <div>
+                                    <h2 className=" text-black font-semibold">Saree</h2>
+                                    <p>Cotton</p>
+                                    <p>Silk</p>
+                                    <p>Katan</p>
+                                    <p>Muslin</p>
+                                    <p>Jamdani</p>
+                                    <p>Georgette</p>
+                                    <p>Nakshi Kantha</p>
+                                    <p>Linen</p>
+                                    <p>Khadi</p>
+                                    <p>Tangail Taant</p>
+                                    <p>Monipuri</p>
+                                    <p>Dhakai Benaroshi</p>
+                                </div>
+                                <div>
+                                    <h2 className=" text-black font-semibold">Clothes</h2>
+                                    <p>T-shirt</p>
+                                    <p>Shorts</p>
+                                    <p>Shirt</p>
+                                    <p>Tracksuit</p>
+                                    <p>Jeans</p>
+                                    <p>Georgette</p>
+                                    <p>Waistcoat</p>
+                                    <p>Sweater</p>
+                                    <p>coats</p>
+                                    <p>Suit</p>
+                                    <p>Sweatshirt</p>
+                                    <p>Uniform</p>
+                                </div>
+                                <div>
+                                    <h2 className=" text-black font-semibold">Cosmetic</h2>
+                                    <p>Perfume</p>
+                                    <p>Eye make-up</p>
+                                    <p>Skin care</p>
+                                    <p>Hair care</p>
+                                    <p>Make-up</p>
+                                    <p>Oral Care</p>
+                                    <p>Body Care</p>
+                                    <p>Sanitary pad</p>
+                                    <p>Shower Gels & Creams</p>
+                                    <p>Hair Removal Products</p>
+                                    <p>Lipstick</p>
+                                    <p>Suntan cream</p>
+                                </div>
+                                <div>
+                                    <h2 className=" text-black font-semibold">Sports & Outdoor</h2>
+                                    <p>Sweatshirt</p>
+                                    <p>T-shirt</p>
+                                    <p>Sports Bra</p>
+                                    <p>Leggings</p>
+                                    <p>Tracksuit</p>
+                                    <p>Running Shoes</p>
+                                    <p>Sports Bag</p>
+                                    <p>Sports Equipment</p>
+                                    <p>Outdoor Shoes</p>
+                                    <p>Snow Boot</p>
+                                    <p>Outdoor Equipment</p>
+                                    <p>Sports Accessories</p>
+                                </div>
+                                <div className="flex flex-row justify-between lg:flex-col gap-[33px]">
+                                    <div>
+                                        <h2 className=" text-black font-semibold">Personal Care</h2>
+                                        <p>Perfume</p>
+                                        <p>Sexual Health</p>
+                                        <p>After Shave Products</p>
+                                        <p>Razor blade</p>
+                                    </div>
+                                    <div>
+                                        <h2 className=" text-black font-semibold">Shoes</h2>
+                                        <p>Heeled shoes</p>
+                                        <p>sneakers</p>
+                                        <p>Casual Shoes</p>
+                                        <p>Babet</p>
+                                        <p>Sandals</p>
+                                        <p>Slipper</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
                     <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Men's Fashion</li>
                     <li className=" cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Kid's Fashion</li>
                     <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Home & Lifestyle</li>
