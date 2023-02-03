@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from '.././Assets/Icons/pirvoya_logo.png'
 import cart from '.././Assets/Icons/cart.png'
+import blueCart from '.././Assets/Icons/blue_basket.png'
 import { BiSearch } from 'react-icons/bi';
 import { HiOutlineUser } from 'react-icons/hi';
 import { AiOutlineHeart } from 'react-icons/ai';
@@ -17,9 +18,11 @@ const Navbar = () => {
                 </div>
                 <div className=" order-3 lg:order-1 col-span-9 w-full flex items-center gap-10">
                     <Link to='/'><img className="hidden lg:block  w-[141px]" src={logo} alt="Project-Nirvoya-Logo" /></Link>
-                    <div className="flex w-full">
-                        <input className=" w-full border border-[#F1F1F1] rounded-l-[5px] bg-[#F6F6F6] pl-[13px] lg:pl-[13px] py-[8px] lg:py-[13px] outline-none focus:bg-white" type="search" name="search" id="search" placeholder="I'm looking for..." />
-                        <button className="bg-secondary px-[20px] py-[14px] rounded-r-[5px] text-2xl text-white"><BiSearch /></button>
+                    <div className="w-full" >
+                        <form className="flex w-full" action="">
+                            <input className=" w-full border border-[#F1F1F1] rounded-l-[5px] bg-[#F6F6F6] pl-[13px] lg:pl-[13px] py-[8px] lg:py-[13px] outline-none focus:bg-white" type="text" autoComplete="off" name="search" id="search" placeholder="I'm looking for..." />
+                            <button className="bg-secondary px-[20px] py-[14px] rounded-r-[5px] text-2xl text-white"><BiSearch /></button>
+                        </form>
                     </div>
                 </div>
                 <div className=" order-2 lg:order-2 col-span-3 w-full">
@@ -31,10 +34,11 @@ const Navbar = () => {
                             <a href="#" className="text-base flex items-center gap-1 hover:text-secondary"> <AiOutlineHeart /> <span className="hidden lg:block">Wishlist</span></a>
                         </div>
                         <div>
-                            <Link className="text-base flex items-center gap-1 relative hover:text-secondary" to='/myCart'>
-                                <img className="w-[16px] " src={cart} alt="" />
+                            <Link className="text-base flex items-center gap-1 relative hover:text-secondary group" to='/myCart'>
+                                <img className="w-[16px] block group-hover:hidden " src={cart} alt="" />
+                                <img className="w-[16px] hidden group-hover:block " src={blueCart} alt="" />
                                 <span className="hidden lg:block">My Cart</span>
-                                <span className="bg-secondary text-white w-4 lg:w-5 h-4 lg:h-5 rounded-full flex justify-center items-center text-xs lg:text-sm absolute lg:relative top-[-8px] lg:top-0 left-[8px] lg:left-0">1</span>
+                                <span className="bg-error text-white w-4 lg:w-5 h-4 lg:h-5 rounded-full flex justify-center items-center text-xs lg:text-sm absolute lg:relative top-[-8px] lg:top-0 left-[8px] lg:left-0">1</span>
                             </Link>
                         </div>
                     </div>

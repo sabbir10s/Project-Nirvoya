@@ -23,6 +23,9 @@ module.exports = {
 
           "error": "#FF5D5D",
         },
+        fontFamily: {
+          body: ["Poppins"]
+        },
       },
     ],
   },
