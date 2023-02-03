@@ -10,22 +10,26 @@ import { MdNavigateNext } from 'react-icons/md';
 
 const Navbar = () => {
 
+
     return (
-        <nav className="px-[20px] lg:px-[32px] border-b border-[#EFEEEE] pb-[10px] relative">
-            <div className="grid grid-cols-6 md:grid-cols-12 items-center">
-                <div className=" col-span-3 order-1 block lg:hidden w-full">
+        <nav className="px-[10px] lg:px-[32px] border-b border-[#EFEEEE] py-[10px] relative">
+            <div className="flex justify-between items-center lg:grid lg:grid-cols-12 lg:gap-[20px]">
+                <div className=" col-span-1 w-full">
                     <Link to='/'><img className="w-[100px]" src={logo} alt="Project-Nirvoya-Logo" /></Link>
                 </div>
-                <div className=" order-3 lg:order-1 col-span-9 w-full flex items-center gap-10">
-                    <Link to='/'><img className="hidden lg:block  w-[141px]" src={logo} alt="Project-Nirvoya-Logo" /></Link>
-                    <div className="w-full" >
-                        <form className="flex w-full" action="">
-                            <input className=" w-full border border-[#F1F1F1] rounded-l-[5px] bg-[#F6F6F6] pl-[13px] lg:pl-[13px] py-[8px] lg:py-[13px] outline-none focus:bg-white" type="text" autoComplete="off" name="search" id="search" placeholder="I'm looking for..." />
-                            <button className="bg-secondary px-[20px] py-[14px] rounded-r-[5px] text-2xl text-white"><BiSearch /></button>
-                        </form>
+
+                <div className="col-span-8 hidden lg:block w-full">
+                    <div className=" w-full flex items-center gap-10">
+                        <div className="w-full" >
+                            <form className="flex w-full" action="">
+                                <input className=" w-full border border-[#F1F1F1] rounded-l-[5px] bg-[#F6F6F6] pl-[13px] lg:pl-[13px] py-[8px] lg:py-[13px] outline-none focus:bg-white" type="text" autoComplete="off" name="search" id="search" placeholder="I'm looking for..." />
+                                <button className="bg-secondary px-[20px] py-[14px] rounded-r-[5px] text-2xl text-white"><BiSearch /></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div className=" order-2 lg:order-2 col-span-3 w-full">
+
+                <div className="col-span-3 w-full">
                     <div className="flex justify-end items-center gap-8 w-full">
                         <div>
                             <label htmlFor="my-modal-5" className=" cursor-pointer text-base flex items-center gap-1 hover:text-secondary" to='/login'><HiOutlineUser /> <span className="hidden lg:block">Login</span></label>
@@ -43,6 +47,14 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div className="block lg:hidden w-full mt-[9px]">
+                <form className="flex" action="">
+                    <input className=" w-full border border-[#F1F1F1] rounded-l-[5px] bg-[#F6F6F6] pl-[13px] lg:pl-[13px] py-[8px] lg:py-[13px] outline-none focus:bg-white" type="text" autoComplete="off" name="search" id="search" placeholder="I'm looking for..." />
+                    <button className="bg-secondary px-[20px] py-[14px] rounded-r-[5px] text-2xl text-white"><BiSearch /></button>
+                </form>
             </div>
 
             <div>
@@ -139,6 +151,8 @@ const Navbar = () => {
                     <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Computer & Electronics</li>
                     <li className="hidden lg:block cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary">Food & Grocery</li>
                     <li className="block lg:hidden cursor-pointer hover:text-secondary border-b-2 pb-2 border-b-transparent hover:border-b-2 hover:border-secondary text-lg text-[#999999]"><MdNavigateNext /></li>
+
+
                 </ul>
             </div>
         </nav>
